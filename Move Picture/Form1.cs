@@ -66,6 +66,17 @@ namespace Move_Picture
             
             
         }
+
+        private async void button5_Click(object sender, EventArgs e)
+        {
+            while (pictureBox1.Location.X + 5 < ClientRectangle.Width - pictureBox1.Width)
+            {
+                pictureBox1.Location = new Point(pictureBox1.Location.X + 5, pictureBox1.Location.Y);
+                await Task.Delay(100);
+            }
+            pictureBox1.Location = new Point(ClientRectangle.Width - pictureBox1.Width, pictureBox1.Location.Y);
+
+        }
     }
 }
 
