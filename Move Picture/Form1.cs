@@ -51,9 +51,18 @@ namespace Move_Picture
             for (int i = 0; i < 75; i++)
             {
                 pictureBox1.Location = new Point(pictureBox1.Location.X + 5, pictureBox1.Location.Y);
-                await Task.Delay(50);
-
+                await Task.Delay(75);
             }
+            for (int i = 0; i < 75; i++)
+            {
+                pictureBox1.Location = new Point(pictureBox1.Location.X - 5, pictureBox1.Location.Y);
+                await Task.Delay(75);
+            }
+
+          
+              
+       
+      
             
             
         }
